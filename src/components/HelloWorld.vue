@@ -4,7 +4,7 @@
     <div class="dis ">{{ display || 0 }}</div>
     <div class="btns num">history</div>
     <div class="btns num"><i class="fas fa-ruler-horizontal"></i></div>
-    <div class="btns num">symbol</div>
+    <div class="btns num"><i class="fas fa-calculator"></i></div>
     <div class="btns num" @click="clear"><i class="fas fa-backspace"></i></div>
     <div class="btns num" style="color:red" @click="clear">C</div>
     <div class="op btns num">`()`</div>
@@ -12,7 +12,7 @@
     <div class="op btns num" @click="divide">/</div>
     <div class="btns num" @click="pick('7')">7</div>
     <div class="btns num" @click="pick('8')">8</div>
-    <div class="btns" @click="pick('9')">9</div>
+    <div class="btns num" @click="pick('9')">9</div>
     <div class="op btns num" @click="mult">x</div>
     <div class="btns num" @click="pick('4')">4</div>
     <div class="btns num" @click="pick('5')">5</div>
@@ -110,7 +110,8 @@ export default {
   grid-column: 1 / 5;
   grid-row: 1/6;
   margin-top: 5px;
-  background-color: red;
+  background-color:ghostwhite;
+  border: 0.5px solid #808080;
   padding-top: 50%;
   padding-left: 80%;
 }
@@ -126,6 +127,6 @@ export default {
 }
 .btns {
   background-color: ghostwhite;
-  border: 0.5px solid #333;
+  border: 0.5px solid #808080;
 }
 </style>
